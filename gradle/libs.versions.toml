@@ -10,6 +10,7 @@ material = "1.12.0"
 activity = "1.9.0"
 constraintlayout = "2.1.4"
 chucker = "4.0.0"
+secret-gradle = "2.0.1"
 
 [libraries]
 # android core
@@ -29,4 +30,5 @@ chunker-no-op = { group = "com.github.chuckerteam.chucker", name = "library-no-o
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+secret-gradle = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secret-gradle" }
 

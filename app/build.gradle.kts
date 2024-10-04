@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.secret.gradle)
 }
 
 android {
@@ -21,10 +22,13 @@ android {
             dimension = "env"
             applicationIdSuffix = ".dev"
             versionNameSuffix = "-dev"
+
+            buildConfigField("String", "BASE_URL", project.findProperty("api_sandbox") as String)
             versionCode = 1
             versionName = "1.0"
         }
         create("prod") {
+            buildConfigField("String", "BASE_URL", project.findProperty("api_production") as String)
             dimension = "env"
             versionCode = 1
             versionName = "1.0"
@@ -43,6 +47,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 
     compileOptions {
