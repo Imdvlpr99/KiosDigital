@@ -8,4 +8,15 @@
     </style>
 
     <style name="Theme.KiosDigital" parent="Base.Theme.KiosDigital" />
+
+    <style name="TextRegular16spWhite">
+        <item name="fontFamily">@font/nunito_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="TextSemiBold16spWhite">
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 </resources>
