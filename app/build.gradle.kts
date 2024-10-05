@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.secret.gradle)
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -73,4 +74,12 @@ dependencies {
 
     "devImplementation"(libs.chunker.std)
     "prodImplementation"(libs.chunker.no.op)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.bundles.firebase)
+    implementation(libs.bundles.network)
+
+    implementation(libs.koin.android)
+    testImplementation(libs.koin.test)
+    testImplementation(libs.koin.test.junit4)
 }

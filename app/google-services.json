@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "349598587361",
+    "project_id": "kiosdigital-c29e2",
+    "storage_bucket": "kiosdigital-c29e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349598587361:android:b6abab1739ed5d7cc4daa0",
+        "android_client_info": {
+          "package_name": "id.imdvlpr.kiosdigital"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4zdv-wXY4DE69eGPQQ5s4WWzuXFQzvDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
