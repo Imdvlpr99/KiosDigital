@@ -11,6 +11,11 @@ activity = "1.9.0"
 constraintlayout = "2.1.4"
 chucker = "4.0.0"
 secret-gradle = "2.0.1"
+google-services = "4.4.2"
+firebase-bom = "33.4.0"
+okhttp = "4.12.0"
+gson = "2.11.0"
+koin-version = "3.4.3"
 
 [libraries]
 # android core
@@ -23,12 +28,29 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
+# firebase
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore-ktx" }
+
 # network
 chunker-std = { group = "com.github.chuckerteam.chucker", name = "library", version.ref = "chucker" }
 chunker-no-op = { group = "com.github.chuckerteam.chucker", name = "library-no-op", version.ref = "chucker" }
+okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+#KOIN
+koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin-version" }
+koin-test = { group = "io.insert-koin", name = "koin-test", version.ref = "koin-version" }
+koin-test-junit4 = { group = "io.insert-koin", name = "koin-test-junit4", version.ref = "koin-version" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 secret-gradle = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secret-gradle" }
+google-services = { id = "com.google.gms.google-services", version.ref = "google-services" }
+
+[bundles]
+firebase = ["firebase-analytics", "firebase-firestore"]
+network = ["okhttp3", "gson"]
 
