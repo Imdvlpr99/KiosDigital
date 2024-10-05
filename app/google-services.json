@@ -23,6 +23,25 @@
           "other_platform_oauth_client": []
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349598587361:android:c90b430700c4c76ec4daa0",
+        "android_client_info": {
+          "package_name": "id.imdvlpr.kiosdigital.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4zdv-wXY4DE69eGPQQ5s4WWzuXFQzvDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
     }
   ],
   "configuration_version": "1"
