@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KiosDigital</string>
+    <string name="login_title">Masuk</string>
+    <string name="register_title">Daftar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
