@@ -16,6 +16,8 @@ firebase-bom = "33.4.0"
 okhttp = "4.12.0"
 gson = "2.11.0"
 koin-version = "3.4.3"
+aescrypt = "0.0.1"
+coroutines = "1.8.1"
 
 [libraries]
 # android core
@@ -39,10 +41,18 @@ chunker-no-op = { group = "com.github.chuckerteam.chucker", name = "library-no-o
 okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 
+#COROUTINES
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+coroutine-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutine-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+coroutine-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+
 #KOIN
 koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin-version" }
 koin-test = { group = "io.insert-koin", name = "koin-test", version.ref = "koin-version" }
 koin-test-junit4 = { group = "io.insert-koin", name = "koin-test-junit4", version.ref = "koin-version" }
+
+security-aescrypt = { group = "com.scottyab", name = "aescrypt", version.ref = "aescrypt" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
