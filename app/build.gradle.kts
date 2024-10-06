@@ -68,9 +68,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.kotlin.stdlib)
+    implementation(libs.coroutine.core)
+    implementation(libs.coroutine.android)
 
     "devImplementation"(libs.chunker.std)
     "prodImplementation"(libs.chunker.no.op)
@@ -78,8 +78,14 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.bundles.firebase)
     implementation(libs.bundles.network)
+    implementation(libs.security.aescrypt)
+    implementation(libs.view.pager2)
 
     implementation(libs.koin.android)
     testImplementation(libs.koin.test)
     testImplementation(libs.koin.test.junit4)
+    testImplementation(libs.coroutine.test)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 }

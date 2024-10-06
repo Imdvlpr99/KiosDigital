@@ -1,4 +1,4 @@
-package id.imdvlpr.kiosdigital.utils.extension
+package id.imdvlpr.kiosdigital.utils.ui
 
 import android.content.Context
 import android.util.AttributeSet
