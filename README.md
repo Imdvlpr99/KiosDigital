@@ -3,10 +3,8 @@
 KiosDigital is an Android application designed to streamline kiosk management and operations. Built using Kotlin, it offers an intuitive interface for managing sales, inventory, and user roles.
 
 ## Features
-- **User-Friendly Dashboard**: Manage kiosks with ease using an intuitive interface.
-- **Real-Time Data Synchronization**: Automatically syncs data with backend services.
-- **User Role Management**: Support for multiple user roles like admin and manager.
-- **Analytics & Reporting**: Generate reports and analyze sales data.
+
+<-- Under Development -->
 
 ## Installation
 To set up the project locally, follow these steps:
