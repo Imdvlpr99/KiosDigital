@@ -79,6 +79,7 @@ dependencies {
     implementation(libs.bundles.firebase)
     implementation(libs.bundles.network)
     implementation(libs.security.aescrypt)
+    implementation(libs.view.pager2)
 
     implementation(libs.koin.android)
     testImplementation(libs.koin.test)
