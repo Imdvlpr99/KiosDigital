@@ -87,6 +87,16 @@ class DualTabView: ConstraintLayout {
         this.listener = listener
     }
 
+    fun setSelectedButton(position: Int) {
+        if (position == 0) {
+            isLeftSelected = true
+            handleButtonBackground()
+        } else {
+            isLeftSelected = false
+            handleButtonBackground()
+        }
+    }
+
     interface DualTabListener {
         fun onLeftClick()
         fun onRightClick()
