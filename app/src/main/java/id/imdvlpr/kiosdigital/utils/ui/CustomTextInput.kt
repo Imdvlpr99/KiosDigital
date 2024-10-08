@@ -47,18 +47,26 @@ class CustomTextInput: ConstraintLayout {
     private fun init(context: Context) {
         this.context = context
         binding = LayoutTextFieldBinding.bind(LayoutInflater.from(context).inflate(R.layout.layout_text_field, this, true))
-        binding.editText.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
 
-            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                listener?.onTextChangeListener(p0.toString())
+        binding.editText.apply {
+            setOnFocusChangeListener { _, hasFocus ->
+                when (hasFocus) {
+                    true -> binding.constBg.setBackgroundResource(R.drawable.bg_text_field_focused)
+                    false -> binding.constBg.setBackgroundResource(R.drawable.bg_text_field_default)
+                }
             }
+            addTextChangedListener(object : TextWatcher {
+                override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
 
-            override fun afterTextChanged(p0: Editable?) {
-                listener?.onAfterTextChangeListener(p0.toString())
-            }
+                override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                    listener?.onTextChangeListener(p0.toString())
+                }
 
-        })
+                override fun afterTextChanged(p0: Editable?) {
+                    listener?.onAfterTextChangeListener(p0.toString())
+                }
+            })
+        }
     }
 
     fun setTitle(title: String) {
