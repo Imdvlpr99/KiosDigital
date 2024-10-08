@@ -19,14 +19,12 @@ class AuthView : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAuthBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         initView()
     }
 
     private fun initView() {
         with(binding) {
             viewPager.apply {
-                isUserInputEnabled = false
                 viewPager.adapter = ViewPagerAdapter(this@AuthView, fragmentList)
             }
 
