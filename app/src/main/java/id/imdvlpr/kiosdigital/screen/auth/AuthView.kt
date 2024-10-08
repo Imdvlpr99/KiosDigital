@@ -2,6 +2,7 @@ package id.imdvlpr.kiosdigital.screen.auth
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import id.imdvlpr.kiosdigital.R
 import id.imdvlpr.kiosdigital.databinding.ActivityAuthBinding
 import id.imdvlpr.kiosdigital.utils.ui.DualTabView
@@ -26,6 +27,12 @@ class AuthView : AppCompatActivity() {
         with(binding) {
             viewPager.apply {
                 viewPager.adapter = ViewPagerAdapter(this@AuthView, fragmentList)
+                setCurrentItem(0, true)
+                registerOnPageChangeCallback(object : OnPageChangeCallback() {
+                    override fun onPageSelected(position: Int) {
+                        tabView.setSelectedButton(position)
+                    }
+                })
             }
 
             tabView.apply {
