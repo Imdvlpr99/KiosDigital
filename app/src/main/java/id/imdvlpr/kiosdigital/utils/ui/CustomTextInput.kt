@@ -9,11 +9,9 @@ import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
-import androidx.core.view.isVisible
 import androidx.core.widget.CompoundButtonCompat
 import id.imdvlpr.kiosdigital.R
 import id.imdvlpr.kiosdigital.databinding.LayoutTextFieldBinding
