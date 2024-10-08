@@ -11,8 +11,8 @@
     tools:ignore="ContentDescription" >
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
         android:src="@drawable/illustration_hello"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager"
             android:layout_width="0dp"
-            android:layout_height="400dp"
+            android:layout_height="520dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
